@@ -100,8 +100,18 @@ main a:active {
 }
 
 form {
-  text-align: center;
-  padding-bottom: 25px;
+  padding: 8px;
+  margin-right: 50px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 section {
@@ -177,7 +187,7 @@ p {
   margin: 10px 10px 10px 10px;
   padding: 10px;
   border: 2px solid white;
-  background-color: #47adc9;
+  background-color: #052027;
   transition: 1s;
 }
 
@@ -221,7 +231,7 @@ p {
   }
 
   #intro-text p {
-    font-size: 24px;
+    font-size: 1rem;
   }
 
   .logo {

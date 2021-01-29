@@ -79,7 +79,7 @@
         <hr />
         <div class="group">
           <div class="item">
-            <img src="images/me.jpg" alt="my headshot" class="reduced-img" />
+            <img src="images/me.jpg" alt="my headshot" />
           </div>
           <div class="item-double">
             <div class="black-box">
@@ -210,7 +210,14 @@
         <div class="group" id="contact-group">
           <div class="item-double">
             <ul class="link-style">
-              <li><a href="mailto:frank.costelli@outlook.com">E-mail Me</a></li>
+              <li>
+                <a href="mailto:frank.costelli@outlook.com"
+                  >frank.costelli@icloud.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:727-455-1564">(727) 455-1564</a>
+              </li>
               <li>
                 <a
                   target="_blank"
@@ -233,13 +240,14 @@
               class="black-box"
             >
               <label for="user-name" class="name-style">Name:</label>
-              <br />
               <input id="user-name" type="text" name="name" />
-              <br />
+
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="name" />
+
               <label for="user-message">Message:</label>
-              <br />
               <textarea name="message" id="user-message"></textarea>
-              <br />
+
               <button type="submit" class="btn-style">Submit</button>
             </form>
           </div>
