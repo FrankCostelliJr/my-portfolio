@@ -55,48 +55,31 @@ header nav ul {
   margin-right: 40px;
 }
 
-header nav ul li {
-  list-style-type: none;
+header nav ul a {
+  padding: 5px;
 }
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  margin: 10px;
-
-  font-family: "Ubuntu", sans-serif;
-}
-
-header nav ul li a:hover {
-  color: #89ce94;
-}
-
-main ul {
+ul {
   list-style-type: none;
   text-align: center;
   margin-right: 40px;
 }
 
-main ul li a {
-  color: #fff;
+a {
   text-decoration: none;
 }
 
-main ul li a:hover {
-  color: #89ce94;
-}
-
-main a:link {
+a:link {
   color: #fff;
 }
-main a:visited {
-  color: red;
+a:visited {
+  color: aqua;
 }
-main a:hover {
+a:hover {
   color: #89ce94;
 }
-main a:active {
-  color: #47adc9;
+a:active {
+  color: red;
 }
 
 form {
@@ -125,6 +108,7 @@ section {
 }
 
 h1 {
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -172,17 +156,6 @@ p {
   text-align: center;
 }
 
-.links-style {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.links-style a {
-  border: 1px solid white;
-  padding: 8px;
-}
-
 .link-style li {
   margin: 10px 10px 10px 10px;
   padding: 10px;
@@ -192,12 +165,12 @@ p {
 }
 
 .link-style li:hover {
-  background-color: black;
-  color: #89ce94;
+  background-color: #89ce94;
+  color: #fff;
 }
 
 .btn-style {
-  background-color: #47adc9;
+  background-color: #052027;
   margin-top: 15px;
   padding: 10px;
   border-radius: 5%;
@@ -207,7 +180,8 @@ p {
 }
 
 .btn-style:hover {
-  background-color: black;
+  background-color: #89ce94;
+  color: #fff;
 }
 
 .group {
@@ -252,7 +226,7 @@ p {
   }
 
   header nav ul {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 30px;
   }
 
@@ -264,23 +238,23 @@ p {
     margin: 10px 10px 10px 10px;
     padding: 10px;
     border: 2px solid white;
-    background-color: #47adc9;
     transition: 1s;
   }
 
   .link-style li:hover {
-    background-color: black;
+    background-color: #89ce94;
+    color: #fff;
   }
 
   p {
-    margin-top: 30px;
-    font-size: 24px;
+    margin-top: 20px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2em;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
   }
 
