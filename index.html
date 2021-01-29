@@ -30,12 +30,15 @@
 
   <body>
     <header>
-      <div class="logo">Frank Costelli</div>
+      <div class="logo">
+        Frank Costelli
+        <p>Software Developer</p>
+      </div>
       <nav>
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -44,7 +47,7 @@
     <main>
       <section>
         <h1>Welcome!</h1>
-        <hr />
+
         <div class="group">
           <div class="item">
             <div class="black-box" id="intro-text">
@@ -70,9 +73,141 @@
         </div>
       </section>
       <hr />
-      <section>
-        <h2 id="contact">Contact Me</h2>
+      <section id="about">
+        <h2 class="center-text">About Me</h2>
+
+        <hr />
         <div class="group">
+          <div class="item">
+            <img src="/images/me.jpg" alt="my headshot" class="reduced-img" />
+          </div>
+          <div class="item-double">
+            <div class="black-box">
+              <p>
+                For 20 years I have been a business manager and chef, winning
+                many awards from local publications, but I was never satisfied
+                with the work. Working for smaller companies, I discovered that
+                I really enjoyed certain artistic and technical aspects of the
+                job, such as <strong>graphic and web design</strong>. Eventually
+                I became curious about <strong>coding</strong> and began
+                learning JavaScript and Python.
+              </p>
+              <p>
+                As a student at
+                <a target="_blank" href="https://www.thinkful.com/"
+                  ><strong>Thinkful</strong></a
+                >, I am genuinely excited to be on a path to a career in
+                software development, and I am looking forward to working with a
+                team to create something amazing.
+              </p>
+              <p>
+                When I am not coding I am usually creating vivid illustrations
+                with software like Adobe Illustrator or Procreate. I also really
+                enjoy astronomy/astrophysics and reading about the latest
+                discoveries or newest technologies in the field.
+              </p>
+              <p>
+                I am a quick-study, committed and creative, and it would be
+                awesome to connect with like-minded developers or even potential
+                employers. Reach out, and let's change the world, one block of
+                code at a time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <hr />
+        <h2 class="center-text">Portfolio</h2>
+        <hr />
+        <div class="group">
+          <div class="item">
+            <h3>Local Library</h3>
+            <p class="black-box">
+              This project required the creation of a dashboard for a local
+              library, which show which books were available, which are
+              currently borrowed, as well as other useful statistics. This was a
+              front-stack project using mostly native JavaScript. Building the
+              dashboard was a great excersize in the use of higher-functions.
+              You can find the code
+              <a
+                target="_blank"
+                href="https://github.com/FrankCostelliJr/project-local-library"
+                >here</a
+              >.
+            </p>
+
+            <img
+              src="images/local-library.png"
+              alt="local library screenshot"
+            />
+          </div>
+          <div class="item">
+            <h3>Decoder Ring App</h3>
+            <p class="black-box">
+              The decoder ring project was a front-end development project using
+              JavaScript to create ciphers that will allow someone to encode or
+              decode messages. It was a great problem solving project, and good
+              practice with string manipulation. You can find the repo with the
+              code
+              <a
+                target="_blank"
+                href="https://github.com/FrankCostelliJr/Project_Decoder_Ring_1"
+                >here</a
+              >.
+            </p>
+
+            <img
+              src="images/decoder-edited.png"
+              alt="decoder project screenshot"
+            />
+          </div>
+        </div>
+        <div class="group">
+          <div class="item">
+            <h3>Space Invader's Clone</h3>
+            <p class="black-box">
+              This was a fun side-project, attempting to build a clone of the
+              classic arcade game "Space Invaders". This application was built
+              with Python, using the Pygame library. It was a great excersize in
+              game logic and event listeners. Check out the code
+              <a
+                target="_blank"
+                href="https://github.com/FrankCostelliJr/space-invaders"
+                >here</a
+              >.
+            </p>
+
+            <img src="images/invaders-edited.png" alt="space invaders clone" />
+          </div>
+          <div class="item">
+            <h3>Calculator App</h3>
+            <p class="black-box">
+              Building a basic calculator with Python was an interesting
+              excersize in working with native Python GUI modules, such as
+              Tkinter. I was able to get a beginners understanding as to how a
+              GUI is wired up to the applications functions. I was also
+              introduced to concepts such as click/key events and lambda
+              functions. Check out the
+              <a
+                target="_blank"
+                href="https://github.com/FrankCostelliJr/space-invaders"
+                >code</a
+              >.
+            </p>
+
+            <img
+              src="images/calculator-edited.png"
+              alt="calculator screenshot"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <hr />
+        <h2 class="center-text">Contact Me</h2>
+        <hr />
+        <div class="group" id="contact-group">
           <div class="item-double">
             <ul class="link-style">
               <li><a href="mailto:frank.costelli@outlook.com">E-mail Me</a></li>
@@ -90,8 +225,7 @@
               </li>
             </ul>
           </div>
-          <br />
-          <br />
+
           <div class="item">
             <form
               action="https://formspree.io/f/mqkgnevo"
@@ -101,7 +235,6 @@
               <label for="user-name" class="name-style">Name:</label>
               <br />
               <input id="user-name" type="text" name="name" />
-              <br />
               <br />
               <label for="user-message">Message:</label>
               <br />
