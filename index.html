@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank Costelli | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frank Costelli | Software Developer</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <header>
+      <div class="logo">Frank Costelli</div>
+      <nav>
+        <ul id="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-
-  <header class="landing">
-    <div class="logo">Frank Costelli</div>
-    <nav>
-      <ul id="menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-
-      <h1>Welcome!</h1>
-      <hr>
-      <div class="group">
-        <div class="item">
-
-          <div class="black-box">
-
-            <p>
-              Hi, my name is Frank Costelli, and I am full-stack software developer living in sunny Saint Petersburg,
-              Florida! 
+    <main>
+      <section>
+        <h1>Welcome!</h1>
+        <hr />
+        <div class="group">
+          <div class="item">
+            <div class="black-box" id="intro-text">
+              <p>
+                Hi, my name is Frank Costelli, and I am full-stack software
+                developer living in sunny Saint Petersburg, Florida!
               </p>
               <p>
-              I really enjoy working with JavaScript, Node.js, HTML, CSS, Python, and various
-              frameworks/libraries
-              such as Bootstrap, React, and Django. I am also proficient in vector illustration and graphic design,
-              specifically Adobe software such as Illustrator and Photoshop.
-            </p>
+                I really enjoy working with JavaScript, Node.js, HTML, CSS,
+                Python, and various frameworks/libraries such as Bootstrap,
+                React, and Django. I am also proficient in vector illustration
+                and graphic design, specifically Adobe software such as
+                Illustrator and Photoshop.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=pexels-kevin-ku-577585.jpg&fm=jpg"
+              alt="computer screen image"
+            />
           </div>
         </div>
-        <div class="item">
-          <img
-            src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=pexels-kevin-ku-577585.jpg&fm=jpg"
-            alt="computer screen image">
+      </section>
+      <hr />
+      <section>
+        <h2 id="contact">Contact Me</h2>
+        <div class="group">
+          <div class="item-double">
+            <ul class="link-style">
+              <li><a href="mailto:frank.costelli@outlook.com">E-mail Me</a></li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/frank-costelli"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/FrankCostelliJr"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <br />
+          <br />
+          <div class="item">
+            <form
+              action="https://formspree.io/f/mqkgnevo"
+              method="Post"
+              class="black-box"
+            >
+              <label for="user-name" class="name-style">Name:</label>
+              <br />
+              <input id="user-name" type="text" name="name" />
+              <br />
+              <br />
+              <label for="user-message">Message:</label>
+              <br />
+              <textarea name="message" id="user-message"></textarea>
+              <br />
+              <button type="submit" class="btn-style">Submit</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <h2 id="contact">Contact Me</h2>
-      <ul class="links-style">
-        <li><a href="mailto:frank.costelli@outlook.com">E-mail Me</a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/frank-costelli">LinkedIn</a></li>
-        <li><a target="_blank" href="https://github.com/FrankCostelliJr">GitHub</a></li>
-      </ul>
-      <div class="form-style">
-        <form action="https://formspree.io/f/mqkgnevo" method="Post">
-          <label for="user-name" class="name-style">Name:</label>
-          <br>
-          <input id="user-name" type="text" name="name">
-          <br>
-          <br>
-          <label for="user-message">Message:</label>
-          <br>
-          <textarea name="message" id="user-message"></textarea>
-          <br>
-          <button type="submit" class="btn-style">Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <p>© Frank Costelli</p>
-  </footer>
+    <footer>
+      <p>© Frank Costelli</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

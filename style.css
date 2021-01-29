@@ -19,15 +19,15 @@ body {
 
 header {
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .logo {
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
-  font-size: 72px;
   color: white;
   text-align: center;
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
 }
 
 header nav {
@@ -39,7 +39,8 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
-  padding-bottom: 0;
+  padding-bottom: 20px;
+  margin-right: 40px;
 }
 
 header nav ul li {
@@ -49,16 +50,13 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  margin: 10px;
+
   font-family: "Ubuntu", sans-serif;
 }
 
-header nav ul li:last-child {
-  margin-right: 20px;
-}
-
 header nav ul li a:hover {
-  color: red;
+  color: #89ce94;
 }
 
 main ul {
@@ -73,20 +71,24 @@ main ul li a {
 }
 
 main ul li a:hover {
-  color: red;
+  color: #89ce94;
 }
 
 main a:link {
   color: #fff;
 }
 main a:visited {
-  color: blue;
+  color: #015475;
 }
 main a:hover {
-  color: red;
+  color: #89ce94;
 }
 main a:active {
-  color: yellow;
+  color: #47adc9;
+}
+
+form {
+  text-align: center;
 }
 
 h1 {
@@ -95,18 +97,22 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 3rem;
   margin: 20px;
   text-align: center;
 }
 
 h3 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 
 .black-box {
   /*created a class to make text more readable against the background*/
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0 20px 0;
 }
 
 footer {
@@ -123,12 +129,13 @@ footer p {
 
 main img {
   width: 100%;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 p {
   text-align: justify;
   margin: 10px;
+  padding: 5px;
 }
 
 .center-text {
@@ -147,25 +154,30 @@ p {
   padding: 8px;
 }
 
-.form-style {
-  margin-top: 50px;
-  border: 1px solid white;
-  margin: 15px 10px 0 10px;
-  padding: 15px 15px 25px 15px;
+.link-style li {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: #47adc9;
+  transition: 1s;
+}
+
+.link-style li:hover {
+  background-color: black;
 }
 
 .btn-style {
-  background-color: blueviolet;
+  background-color: #47adc9;
   margin-top: 15px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 10%;
+  padding: 10px;
+  border-radius: 5%;
   color: #fff;
   align-items: center;
+  transition: 1s;
 }
 
-textarea {
-  width: 90%;
-  height: 10vh;
+.btn-style:hover {
+  background-color: black;
 }
 
 .group {
@@ -175,7 +187,6 @@ textarea {
 
 .item {
   flex: 1;
-  margin: 10px;
 }
 
 .item-double {
@@ -186,6 +197,10 @@ textarea {
   header {
     display: flex;
     justify-content: space-between;
+  }
+
+  #intro-text p {
+    font-size: 24px;
   }
 
   .logo {
@@ -208,17 +223,25 @@ textarea {
     padding: 50px;
   }
 
-  body {
-    margin-right: 5px;
+  main img {
+    margin-top: 30px;
+    border: 2px solid white;
   }
 
-  main img {
-    margin-top: 50px;
-    border: 3px solid white;
+  .link-style li {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #47adc9;
+    transition: 1s;
+  }
+
+  .link-style li:hover {
+    background-color: black;
   }
 
   p {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 24px;
     font-weight: 500;
     line-height: 2em;
@@ -231,11 +254,6 @@ textarea {
   .group {
     flex-direction: row;
   }
-
-  .center-form {
-    font-size: 35px;
-  }
-
   main ul {
     font-size: 30px;
   }
