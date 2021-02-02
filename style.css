@@ -22,47 +22,72 @@ main {
 }
 
 header {
-  background-color: black;
+  background-color: rgba(3, 58, 110);
   margin-bottom: 15px;
 }
 
 .logo {
   display: flex;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Turret Road", cursive;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  color: #fff;
   text-align: center;
   flex-direction: column;
-  padding-top: 10px;
+  padding: 30px 0 10px 0;
 }
 
 .logo p {
-  font-size: 1rem;
+  font-family: "Turret Road", cursive;
+  font-size: 0.8rem;
   font-style: italic;
   text-align: center;
+  padding: 0;
+  margin: 5px;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Turret Road", cursive;
+  font-size: 800;
 }
 
 header nav ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
-  padding-bottom: 20px;
-  margin-right: 40px;
+  padding: 20px 0 20px 0;
 }
 
 header nav ul a {
+  border: 3px #fff solid;
+  background-color: black;
+  margin: 5px;
   padding: 5px;
+  transition: 1s;
 }
 
-ul {
+header nav ul a:hover {
+  background-color: rgba(3, 58, 110);
+}
+
+#contact-group ul {
   list-style-type: none;
   text-align: center;
-  margin-right: 40px;
+  padding-left: 0;
+}
+
+#about ul {
+  font-family: "Turret Road", cursive;
+  font-size: 1rem;
+}
+
+#portfolio .item {
+  border: 2px solid #fff;
+  padding: 10px;
 }
 
 a {
@@ -70,21 +95,25 @@ a {
 }
 
 a:link {
-  color: #fff;
+  color: rgb(110, 183, 252);
 }
 a:visited {
-  color: aqua;
+  color: rgb(9, 86, 253);
 }
 a:hover {
-  color: #89ce94;
+  color: rgb(175, 0, 175);
 }
 a:active {
   color: red;
 }
 
+#home .item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 form {
   padding: 8px;
-  margin-right: 50px;
 }
 
 form label {
@@ -98,7 +127,7 @@ form textarea {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 #contact {
   margin-top: 20px;
@@ -110,28 +139,40 @@ section {
 h1 {
   font-size: 3rem;
   text-align: center;
+  font-family: "Turret Road", cursive;
+  letter-spacing: 0.3rem;
 }
 
 h2 {
   text-align: center;
+  background-color: rgba(3, 58, 110);
+  padding: 20px 0 20px 0;
+  font-family: "Turret Road", cursive;
+  letter-spacing: 0.3rem;
 }
 
 h3 {
   margin-top: 20px;
   margin-left: 10px;
   padding-bottom: 10px;
+  font-family: "Turret Road", cursive;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .black-box {
   /*created a class to make text more readable against the background*/
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(3, 58, 110, 0.616);
+  padding: 10px 0 10px 0;
 }
 
 footer {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(3, 58, 110, 0.616);
   position: relative;
-  min-height: 100vh;
+  min-height: 100px;
   margin-top: 50px;
 }
 
@@ -141,32 +182,18 @@ footer p {
 
 main img {
   width: 100%;
-  border: 1px solid white;
+  border: 2px solid white;
   margin: 15px 0 15px 0;
 }
 
 p {
   text-align: justify;
-  margin: 10px;
-  padding: 5px;
+  padding: 0 8px 0 8px;
 }
 
 .center-text {
   margin: 10px;
   text-align: center;
-}
-
-.link-style li {
-  margin: 10px 10px 10px 10px;
-  padding: 10px;
-  border: 2px solid white;
-  background-color: #052027;
-  transition: 1s;
-}
-
-.link-style li:hover {
-  background-color: #89ce94;
-  color: #fff;
 }
 
 .btn-style {
@@ -208,10 +235,16 @@ p {
     font-size: 1rem;
   }
 
+  #about .black-box {
+    margin-top: 35px;
+    padding: 20px 0 20 px 0;
+  }
+
   .logo {
-    margin: 14px 0 14px 20px;
-    padding-top: 0;
+    margin: 20px 0 20px 40px;
+    padding: 0;
     font-size: 4rem;
+    padding: 10px;
   }
 
   .logo p {
@@ -221,33 +254,20 @@ p {
   }
 
   header nav {
-    margin-top: 14px;
+    margin-right: 20px;
     font-size: 20px;
   }
 
   header nav ul {
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   header nav ul li a {
-    padding: 50px;
-  }
-
-  .link-style li {
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
-    border: 2px solid white;
-    transition: 1s;
-  }
-
-  .link-style li:hover {
-    background-color: #89ce94;
-    color: #fff;
+    padding: 40px;
   }
 
   p {
-    margin-top: 20px;
     font-size: 1rem;
     font-weight: 500;
     line-height: 2em;
@@ -269,7 +289,17 @@ p {
   .group {
     flex-direction: row;
   }
+
+  #contact-group {
+    padding-top: 80px;
+  }
+
   main ul {
     font-size: 30px;
+  }
+
+  form {
+    margin-top: 30px;
+    margin-right: 80px;
   }
 }

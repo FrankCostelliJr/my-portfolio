@@ -20,6 +20,11 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -45,13 +50,13 @@
     </header>
 
     <main>
-      <section>
+      <section id="home">
         <div class="group">
-          <div class="item">
+          <div class="item black-box">
             <h1>Welcome!</h1>
-            <div class="black-box" id="intro-text">
+            <div id="intro-text">
               <p>
-                Hi, my name is Frank Costelli, and I am full-stack software
+                Hi, my name is Frank Costelli, and I am a full-stack software
                 developer living in sunny Saint Petersburg, Florida!
               </p>
               <p>
@@ -71,11 +76,10 @@
           </div>
         </div>
       </section>
-      <hr />
+
       <section id="about">
         <h2 class="center-text">About Me</h2>
 
-        <hr />
         <div class="group">
           <div class="item">
             <img src="images/me.jpg" alt="my headshot" />
@@ -88,17 +92,26 @@
                 with the work. Working for smaller companies, I discovered that
                 I really enjoyed certain artistic and technical aspects of the
                 job, such as <strong>graphic and web design</strong>. Eventually
-                I became curious about <strong>coding</strong> and began
+                I became curious about coding and began
                 learning JavaScript and Python.
               </p>
+              <br>
               <p>
                 As a student at
                 <a target="_blank" href="https://www.thinkful.com/"
                   ><strong>Thinkful</strong></a
                 >, I am genuinely excited to be on a path to a career in
-                software development, and I am looking forward to working with a
-                team to create something amazing.
+                software development, and I am looking forward to working with an amazing
+                team to provide services such as:
               </p>
+                <br>
+                <ul>
+                  <li>Web Development</li>
+                  <li>Mobile Development</li>
+                  <li>Game Design</li>
+                  <li>Software Consulting</li>
+                </ul>
+              <br>
               <p>
                 When I am not coding I am usually creating vivid illustrations
                 with software like Adobe Illustrator or Procreate. I also really
@@ -116,25 +129,26 @@
         </div>
       </section>
       <section id="portfolio">
-        <hr />
         <h2 class="center-text">Portfolio</h2>
-        <hr />
+
         <div class="group">
           <div class="item">
-            <h3>Local Library</h3>
-            <p class="black-box">
-              This project required the creation of a dashboard for a local
-              library, which show which books were available, which are
-              currently borrowed, as well as other useful statistics. This was a
-              front-stack project using mostly native JavaScript. Building the
-              dashboard was a great excersize in the use of higher-functions.
-              You can find the code
-              <a
-                target="_blank"
-                href="https://github.com/FrankCostelliJr/project-local-library"
-                >here</a
-              >.
-            </p>
+            <div class="black-box">
+              <h3>Local Library</h3>
+              <p>
+                This project required the creation of a dashboard for a local
+                library, which show which books were available, which are
+                currently borrowed, as well as other useful statistics. This was a
+                front-stack project using mostly native JavaScript. Building the
+                dashboard was a great excersize in the use of higher-functions.
+                You can find the code
+                <a
+                  target="_blank"
+                  href="https://github.com/FrankCostelliJr/project-local-library"
+                  >here</a
+                >.
+              </p>
+            </div>
 
             <img
               src="images/local-library.png"
@@ -142,18 +156,22 @@
             />
           </div>
           <div class="item">
-            <h3>Decoder Ring App</h3>
-            <p class="black-box">
-              The decoder ring project was a front-end development project using
-              JavaScript to create ciphers that will allow someone to encode or
-              decode messages. It was a great problem solving project, and good
-              practice with string manipulation. You can find the repo with the
-              code
-              <a
-                target="_blank"
-                href="https://github.com/FrankCostelliJr/Project_Decoder_Ring_1"
-                >here</a
-              >.
+            <div class="black-box">
+
+              <h3>Decoder Ring App</h3>
+              <p class="black-box">
+                The decoder ring project was a front-end development project using
+                JavaScript to create ciphers that will allow someone to encode or
+                decode messages. It was a great problem solving project, and good
+                practice with string manipulation. You can find the repo with the
+                code
+                <a
+                  target="_blank"
+                  href="https://github.com/FrankCostelliJr/Project_Decoder_Ring_1"
+                  >here</a
+                >.
+
+            </div>
             </p>
 
             <img
@@ -164,35 +182,39 @@
         </div>
         <div class="group">
           <div class="item">
-            <h3>Space Invader's Clone</h3>
-            <p class="black-box">
-              This was a fun side-project, attempting to build a clone of the
-              classic arcade game "Space Invaders". This application was built
-              with Python, using the Pygame library. It was a great excersize in
-              game logic and event listeners. Check out the code
-              <a
-                target="_blank"
-                href="https://github.com/FrankCostelliJr/space-invaders"
-                >here</a
-              >.
+            <div class="black-box">
+              <h3>Space Invader's Clone</h3>
+              <p class="black-box">
+                This was a fun side-project, attempting to build a clone of the
+                classic arcade game "Space Invaders". This application was built
+                with Python, using the Pygame library. It was a great excersize in
+                game logic and event listeners. Check out the code
+                <a
+                  target="_blank"
+                  href="https://github.com/FrankCostelliJr/space-invaders"
+                  >here</a
+                >.
+            </div>
             </p>
 
             <img src="images/invaders-edited.png" alt="space invaders clone" />
           </div>
           <div class="item">
-            <h3>Calculator App</h3>
-            <p class="black-box">
-              Building a basic calculator with Python was an interesting
-              excersize in working with native Python GUI modules, such as
-              Tkinter. I was able to get a beginners understanding as to how a
-              GUI is wired up to the applications functions. I was also
-              introduced to concepts such as click/key events and lambda
-              functions. Check out the
-              <a
-                target="_blank"
-                href="https://github.com/FrankCostelliJr/space-invaders"
-                >code</a
-              >.
+            <div class="black-box">
+              <h3>Calculator App</h3>
+              <p class="black-box">
+                Building a basic calculator with Python was an interesting
+                excersize in working with native Python GUI modules, such as
+                Tkinter. I was able to get a beginners understanding as to how a
+                GUI is wired up to the applications functions. I was also
+                introduced to concepts such as click/key events and lambda
+                functions. Check out the
+                <a
+                  target="_blank"
+                  href="https://github.com/FrankCostelliJr/space-invaders"
+                  >code</a
+                >.
+            </div>
             </p>
 
             <img
@@ -203,12 +225,11 @@
         </div>
       </section>
       <section id="contact">
-        <hr />
         <h2 class="center-text">Contact Me</h2>
-        <hr />
-        <div class="group" id="contact-group">
-          <div class="item-double">
-            <ul class="link-style">
+
+        <div class="group black-box">
+          <div class="item" id="contact-group">
+            <ul>
               <li>
                 <a href="mailto:frank.costelli@outlook.com"
                   >frank.costelli@icloud.com</a
@@ -236,7 +257,7 @@
             <form
               action="https://formspree.io/f/mqkgnevo"
               method="Post"
-              class="black-box"
+        
             >
               <label for="user-name" class="name-style">Name:</label>
               <input id="user-name" type="text" name="name" />
