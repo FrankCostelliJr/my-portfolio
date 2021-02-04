@@ -17,6 +17,12 @@ body {
   background-attachment: fixed;
 }
 
+.group-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 main {
   margin: 0 8px 0 5px;
 }
@@ -146,6 +152,7 @@ h1 {
   text-align: center;
   font-family: "Turret Road", cursive;
   letter-spacing: 0.3rem;
+  margin: auto;
 }
 
 h2 {
@@ -236,7 +243,8 @@ p {
   }
 
   #intro-text p {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 
   #about .black-box {
